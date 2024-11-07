@@ -8,5 +8,6 @@ def show_history_temperature(request):
     resultList = temperature_db.objects.all().order_by("-datetime")
     for d in resultList:
         print(model_to_dict(d))
+    print("test2....")
     return HttpResponse("hello")
     # return render(request,"show_history_temperature.html",locals())

@@ -5,9 +5,11 @@ from django.forms.models import model_to_dict
 from myapp.models import *
 
 def show_history_temperature(request):
-    resultList = temperature_db.objects.all().order_by("-datetime")
-    for d in resultList:
-        print(model_to_dict(d))
-    print("hello1")
+    # resultList = temperature_db.objects.all().order_by("-datetime")
+    # for d in resultList:
+    #     print(model_to_dict(d))
+    print("hello1 a")
+    print("hello1 b")
+    print("hello1 c")
     return HttpResponse("hello")
     # return render(request,"show_history_temperature.html",locals())
